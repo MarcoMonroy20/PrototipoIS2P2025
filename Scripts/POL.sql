@@ -52,7 +52,8 @@ CREATE TABLE `detalle_partido` (
   `MARCADOR` varchar(9) DEFAULT NULL,
   `ID_MEJOR_JUGADOR_FK` int(11) NOT NULL,
   `FALTAS` varchar(45) DEFAULT NULL,
-  `ID_ESTADO_PARTIDO_FK` int(11) NOT NULL
+  `ID_ESTADO_PARTIDO_FK` int(11) NOT NULL,
+   estado TINYINT(1) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -106,14 +107,14 @@ CREATE TABLE `entrenador` (
 --
 -- Estructura de tabla para la tabla `equipo`
 --
-
 CREATE TABLE `equipo` (
-  `ID_EQUIPO` int(11) NOT NULL,
-  `NOMBRE_EQUIPO` varchar(50) DEFAULT NULL,
-  `ID_ENTRENADOR_FK` int(11) NOT NULL,
-  `ID_TIPO_DEPORTE__FK` int(11) NOT NULL,
-  `TORNEOS_GANADOS` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  id_equipo int(11) NOT NULL,
+  nombre_equipo varchar(50) ,
+  fkid_nombre_entrenador int(11) NOT NULL,
+  fkid_tipo_deporte int(11) NOT NULL,
+ torneos_ganados int(11) DEFAULT NULL,
+estado TINYINT(1) NOT NULL DEFAULT 1
+);
 
 -- --------------------------------------------------------
 

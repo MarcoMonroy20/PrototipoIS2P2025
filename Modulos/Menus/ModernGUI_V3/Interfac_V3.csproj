@@ -75,7 +75,7 @@
       <HintPath>..\..\Produccion\Produccion\Capa_Vista_Produccion\bin\Debug\Capa_Vista_Produccion.dll</HintPath>
     </Reference>
     <Reference Include="Capa_Vista_RRHH">
-      <HintPath>..\..\SGRRHH\MDI_RRHH\Capa_Vista_RRHH\bin\Debug\Capa_Vista_RRHH.exe</HintPath>
+      <HintPath>..\..\MDI\Capa_Vista_RRHH\bin\Debug\Capa_Vista_RRHH.exe</HintPath>
     </Reference>
     <Reference Include="Capa_Vista_Seguridad">
       <HintPath>..\..\..\Componentes\Seguridad2_5\Capa_Vista_Seguridad\bin\Debug\Capa_Vista_Seguridad.dll</HintPath>
